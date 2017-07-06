@@ -1,7 +1,92 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="91e-YY-cRm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="LYI-30-ooM">
+            <objects>
+                <viewController id="91e-YY-cRm" customClass="MenuViewController" customModule="JogoDaVelha" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ry0-4v-n3J"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q4q-K3-ANO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EVB-Ii-Tjc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogo da Velha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9d-T3-PGr">
+                                <rect key="frame" x="13" y="40" width="349" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="W2e-zG-typ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6T-Kw-qwt">
+                                <rect key="frame" x="19" y="235" width="343" height="55"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.58823529409999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="2uH-5E-65B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="33"/>
+                                <state key="normal" title="Player vs Player">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="one_x_one:" destination="91e-YY-cRm" eventType="touchUpInside" id="drW-YO-AbO"/>
+                                    <segue destination="PO0-tW-5Lb" kind="show" identifier="segueMain" id="Rf2-Jz-W6j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiW-bf-1bf">
+                                <rect key="frame" x="19" y="306" width="343" height="55"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.58823529409999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="FWs-zJ-m19"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                <state key="normal" title="Player vs Thomas">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="one_x_one:" destination="91e-YY-cRm" eventType="touchUpInside" id="coV-Vk-opg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R9d-T3-PGr" secondAttribute="trailing" constant="13" id="9L6-yt-COj"/>
+                            <constraint firstItem="y6T-Kw-qwt" firstAttribute="trailing" secondItem="EVB-Ii-Tjc" secondAttribute="trailingMargin" constant="3" id="9PR-cJ-1X7"/>
+                            <constraint firstItem="y6T-Kw-qwt" firstAttribute="centerX" secondItem="WiW-bf-1bf" secondAttribute="centerX" id="Sd9-lU-SS3"/>
+                            <constraint firstItem="WiW-bf-1bf" firstAttribute="trailing" secondItem="EVB-Ii-Tjc" secondAttribute="trailingMargin" constant="3" id="Szt-6B-hfV"/>
+                            <constraint firstItem="WiW-bf-1bf" firstAttribute="top" secondItem="y6T-Kw-qwt" secondAttribute="bottom" constant="15.5" id="ebU-Tf-PHd"/>
+                            <constraint firstItem="R9d-T3-PGr" firstAttribute="leading" secondItem="EVB-Ii-Tjc" secondAttribute="leading" constant="13" id="ef5-I3-2K1"/>
+                            <constraint firstItem="WiW-bf-1bf" firstAttribute="centerY" secondItem="EVB-Ii-Tjc" secondAttribute="centerY" id="iZW-h8-xZ2"/>
+                            <constraint firstItem="WiW-bf-1bf" firstAttribute="leading" secondItem="EVB-Ii-Tjc" secondAttribute="leadingMargin" constant="3" id="pZw-6R-LZO"/>
+                            <constraint firstItem="R9d-T3-PGr" firstAttribute="top" secondItem="Ry0-4v-n3J" secondAttribute="bottom" constant="20" id="vU6-b9-G37"/>
+                            <constraint firstItem="y6T-Kw-qwt" firstAttribute="leading" secondItem="EVB-Ii-Tjc" secondAttribute="leadingMargin" constant="3" id="ynN-vO-hhb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIT-eT-A62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151.875" y="52.5"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="5AN-tG-ghE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="PO0-tW-5Lb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d02-Lv-jqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="5"/>
+        </scene>
+    </scenes>
 </document>

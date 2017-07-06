@@ -9,27 +9,33 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  @IBAction func one_x_one(_ sender: Any) {
+    performSegue(withIdentifier: "segueMain", sender: sender)
+  }
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+  }
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "segueMain" {
+      if let mainViewController = segue.destination as? ViewController {
+        if let senderButton =  sender as? UIButton{
+          
+          if senderButton.tag == 1{
+            mainViewController.modGame = 1
+            mainViewController.textString = "Player vs Player"
+          }else{
+            mainViewController.modGame = 2
+             mainViewController.textString = "Tente vencer o Thomas"
+          }
+          
+        }
+      }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  }
+  
 }

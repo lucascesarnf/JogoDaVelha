@@ -14,6 +14,8 @@
 		CA83390D1F0AC3EB00411CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA83390B1F0AC3EB00411CC4 /* LaunchScreen.storyboard */; };
 		CA8339181F0AC3EB00411CC4 /* JogoDaVelhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8339171F0AC3EB00411CC4 /* JogoDaVelhaTests.swift */; };
 		CA8339231F0AC3EB00411CC4 /* JogoDaVelhaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8339221F0AC3EB00411CC4 /* JogoDaVelhaUITests.swift */; };
+		CADC39EB1F0C111C002A2C7F /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADC39EA1F0C111C002A2C7F /* Menu.storyboard */; };
+		CADC39ED1F0C16B3002A2C7F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC39EC1F0C16B3002A2C7F /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CA83391E1F0AC3EB00411CC4 /* JogoDaVelhaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JogoDaVelhaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8339221F0AC3EB00411CC4 /* JogoDaVelhaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoDaVelhaUITests.swift; sourceTree = "<group>"; };
 		CA8339241F0AC3EB00411CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADC39EA1F0C111C002A2C7F /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		CADC39EC1F0C16B3002A2C7F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				CA8339091F0AC3EB00411CC4 /* Assets.xcassets */,
 				CA83390B1F0AC3EB00411CC4 /* LaunchScreen.storyboard */,
 				CA83390E1F0AC3EB00411CC4 /* Info.plist */,
+				CADC39EA1F0C111C002A2C7F /* Menu.storyboard */,
+				CADC39EC1F0C16B3002A2C7F /* MenuViewController.swift */,
 			);
 			path = JogoDaVelha;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 				CA83390D1F0AC3EB00411CC4 /* LaunchScreen.storyboard in Resources */,
 				CA83390A1F0AC3EB00411CC4 /* Assets.xcassets in Resources */,
 				CA8339081F0AC3EB00411CC4 /* Main.storyboard in Resources */,
+				CADC39EB1F0C111C002A2C7F /* Menu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA8339051F0AC3EB00411CC4 /* ViewController.swift in Sources */,
+				CADC39ED1F0C16B3002A2C7F /* MenuViewController.swift in Sources */,
 				CA8339031F0AC3EB00411CC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +522,7 @@
 				CA8339291F0AC3EB00411CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA83392A1F0AC3EB00411CC4 /* Build configuration list for PBXNativeTarget "JogoDaVelhaTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				CA83392C1F0AC3EB00411CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA83392D1F0AC3EB00411CC4 /* Build configuration list for PBXNativeTarget "JogoDaVelhaUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				CA83392F1F0AC3EB00411CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
