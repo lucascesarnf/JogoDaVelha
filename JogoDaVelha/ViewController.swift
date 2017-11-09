@@ -26,6 +26,7 @@ class ViewController: UIViewController {
   var gamer = 2
   let victory = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
   let trevo = [[1,3,0],[1,5,2],[3,7,6],[5,7,8]]
+  let defence = [[0,7,6],[2,7,8]]
   var count = 0
   let fuck = ["Humano imprestável","Tende ganhar de mim humano!","Me ganha na próxima!","Eu sou melhor que você, aceite!","Você nunca vai me vencer","Eu sou o rei desse jogo!","Tenta vencer a próxima","Eu mando aqui","Aceita que doi menos","Mais sorte na próxima","Desiste logo humano","Sai desse jogo, isso não é pra você"]
   //***********************
@@ -280,6 +281,13 @@ class ViewController: UIViewController {
         }
       }
     }
+    
+    for index in defence{
+      if(stateVector[index[0]] == 2 && stateVector[index[1]] == 2 && stateVector[index[2]] == 0){
+        return index[2]
+      }
+    }
+    
     for index in trevo{
       if(stateVector[index[0]] == 2 && stateVector[index[1]] == 2 && stateVector[index[2]] == 0){
         return index[2]

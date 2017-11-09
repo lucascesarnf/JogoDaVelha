@@ -199,7 +199,7 @@
 				TargetAttributes = {
 					CA8338FE1F0AC3EB00411CC4 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = YFN69497L7;
+						DevelopmentTeam = U97CW8FQ5U;
 						ProvisioningStyle = Automatic;
 					};
 					CA8339121F0AC3EB00411CC4 = {
@@ -423,11 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YFN69497L7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U97CW8FQ5U;
 				INFOPLIST_FILE = JogoDaVelha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lucas.JogoDaVelha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IOSlucas.JogoDaVelha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -436,11 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YFN69497L7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U97CW8FQ5U;
 				INFOPLIST_FILE = JogoDaVelha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lucas.JogoDaVelha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IOSlucas.JogoDaVelha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
